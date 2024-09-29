@@ -2,6 +2,8 @@
 	import Card from '$lib/components/Card.svelte';
 	import Title from '$lib/components/Title.svelte';
 	import UserIcon from '$lib/components/icons/UserIcon.svelte';
+	import CaseIcon from '$lib/components/icons/CaseIcon.svelte';
+	import Contact from '$lib/components/Contact.svelte';
 	import Job from '$lib/components/Job.svelte';
 
 	const jobList = [
@@ -32,18 +34,26 @@
 	];
 </script>
 
-<div class="bg-surface-700 p-5 h-full col-span-2 rounded-l-2xl flex flex-col gap-6 items-center">
+<div
+	class="bg-surface-700 bg-opacity-50 p-5 h-full col-span-2 rounded-l-2xl flex flex-col gap-6 items-center"
+>
 	<enhanced:img
 		src="/src/lib/assets/super-handsome-man.png"
 		alt="Handsome and super cool guy"
 		class="rounded-full shadow-lg w-48 h-auto mt-4"
 	/>
-	<div class="flex flex-col items-center gap-2">
+	<div class="flex flex-col gap-2">
 		<h3 class="h3">Jannis Karanikis</h3>
-		<div class="flex flex-col items-center">
+		<div class="flex flex-col">
 			<Title>Software Engineer</Title>
 			<Title>Test Specialist</Title>
 			<Title>Cyber Security Enthusiast</Title>
+		</div>
+		<div class="flex flex-col gap-4 mt-8">
+			<h3 class="h3">Contact</h3>
+			<Contact text="Jannis.Karanikis@gmail.com" variant="email" />
+			<Contact text="+46763075418" variant="phone" />
+			<Contact text="Stockholm, Sweden" variant="location" />
 		</div>
 	</div>
 </div>
@@ -67,7 +77,7 @@
 	</Card>
 	<Card>
 		<div class="flex gap-1 items-center mb-5">
-			<UserIcon />
+			<CaseIcon />
 			<h3 class="h3">Work Experience</h3>
 		</div>
 		{#each jobList as job}
@@ -75,7 +85,7 @@
 		{/each}
 	</Card>
 </div>
-<div class="bg-surface-700 p-5 h-full col-span-2 rounded-r-2xl">
+<div class="bg-surface-700 bg-opacity-50 p-5 h-full col-span-2 rounded-r-2xl">
 	<h1 class="text-2xl font-bold">Hello World</h1>
 	<p class="text-gray-600">This is a sample page</p>
 </div>
