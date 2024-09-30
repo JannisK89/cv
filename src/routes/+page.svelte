@@ -4,43 +4,23 @@
 	import UserIcon from '$lib/components/icons/UserIcon.svelte';
 	import CaseIcon from '$lib/components/icons/CaseIcon.svelte';
 	import Contact from '$lib/components/Contact.svelte';
+	import Skill from '$lib/components/Skill.svelte';
 	import Job from '$lib/components/Job.svelte';
-
-	const jobList = [
-		{
-			title: 'Software Engineer | Software Engineer In Test',
-			company: 'Avega',
-			from: 'Oct 2021',
-			to: 'Present',
-			description: [
-				'Test Automation Lead.',
-				'Mentored juniors and conducted code reviews.',
-				'Worked closely with other developers to improve quality of application code.',
-				`Implemented security measures to protect company's data.`,
-				'Focused on enchancing frontend performance and accesibility.'
-			]
-		},
-		{
-			title: 'Technical Tester',
-			company: 'Nordicstation',
-			from: 'Jan 2020',
-			to: 'Oct 2021',
-			description: [
-				'Test Lead on multiple projects.',
-				'Led development and planning of test automation.',
-				'Assisted in development of backend and frontend code.'
-			]
-		}
-	];
+	import EducationIcon from '$lib/components/icons/EducationIcon.svelte';
+	import ComputerIcon from '$lib/components/icons/ComputerIcon.svelte';
+	import Quote from '$lib/components/Quote.svelte';
+	import { links, quotes, skills, jobList } from '$lib/data';
+	import Section from '$lib/components/Section.svelte';
+	import Link from '$lib/components/Link.svelte';
 </script>
 
 <div
-	class="bg-surface-700 bg-opacity-50 p-5 h-full col-span-2 rounded-l-2xl flex flex-col gap-6 items-center"
+	class="bg-surface-700 bg-opacity-50 p-5 xl:h-full col-span-2 xl:rounded-l-2xl flex flex-col xl:gap-6 items-center pb-16"
 >
 	<enhanced:img
 		src="/src/lib/assets/super-handsome-man.png"
 		alt="Handsome and super cool guy"
-		class="rounded-full shadow-lg w-48 h-auto mt-4"
+		class="rounded-full shadow-lg w-48 h-auto my-4 xl:my-0"
 	/>
 	<div class="flex flex-col gap-2">
 		<h3 class="h3">Jannis Karanikis</h3>
@@ -49,12 +29,18 @@
 			<Title>Test Specialist</Title>
 			<Title>Cyber Security Enthusiast</Title>
 		</div>
-		<div class="flex flex-col gap-4 mt-8">
+		<Section>
 			<h3 class="h3">Contact</h3>
 			<Contact text="Jannis.Karanikis@gmail.com" variant="email" />
 			<Contact text="+46763075418" variant="phone" />
 			<Contact text="Stockholm, Sweden" variant="location" />
-		</div>
+		</Section>
+		<Section>
+			<h3 class="h3">Links</h3>
+			{#each links as link}
+				<Link {...link} />
+			{/each}
+		</Section>
 	</div>
 </div>
 <div class="col-span-4 bg-surface-700 bg-opacity-15">
@@ -63,16 +49,13 @@
 			<UserIcon />
 			<h3 class="h3">About Me</h3>
 		</div>
-		<p class="font-sans font-light antialiased">
-			I am a software engineer with expertise in TypeScript and strong knowledge of C# and Go. I
-			specialize in test automation, frontend development, cybersecurity, and DevOps. With a solid
-			background in testing, several years of professional and open-source programming experience,
-			and a passion for continuous improvement.
-		</p>
-		<p class="font-sans font-light antialiased">
-			I strive to create robust and secure systems while staying up to date with the latest industry
-			trends.I am a software engineer with expertise in TypeScript and strong knowledge of C# and
-			Go. I specialize in test automation, frontend development, cybersecurity, and DevOps.
+		<p class="font-sans font-light antialiased text-base">
+			I’m a software engineer with a strong focus on TypeScript and additional experience in Go and
+			C#. My expertise spans test automation, frontend development, cybersecurity, and DevOps. I
+			lead test automation initiatives, mentor junior engineers, and work to enhance code quality,
+			security, and performance. With a background in both professional and open-source projects,
+			I’m dedicated to building secure, high-performance systems while staying current with the
+			latest industry trends.
 		</p>
 	</Card>
 	<Card>
@@ -84,8 +67,41 @@
 			<Job {...job} />
 		{/each}
 	</Card>
+	<Card>
+		<div class="flex gap-1 items-center mb-5">
+			<EducationIcon />
+			<h3 class="h3">Education</h3>
+		</div>
+		<Job
+			title="Quality Assurance And Testing in IT"
+			company="Nackademin"
+			from="2018"
+			to="2020"
+			description={[
+				'2 year vocational education.',
+				'Test and test methodologies.',
+				'Test automation',
+				'Backend and Frontend development'
+			]}
+		/>
+	</Card>
+	<Card>
+		<div class="flex gap-1 items-center mb-5">
+			<ComputerIcon />
+			<h3 class="h3">Skills</h3>
+		</div>
+		<ul class="flex flex-wrap gap-2">
+			{#each skills as skill}
+				<Skill title={skill} />
+			{/each}
+		</ul></Card
+	>
 </div>
-<div class="bg-surface-700 bg-opacity-50 p-5 h-full col-span-2 rounded-r-2xl">
-	<h1 class="text-2xl font-bold">Hello World</h1>
-	<p class="text-gray-600">This is a sample page</p>
+<div class="bg-surface-700 bg-opacity-50 p-5 xl:h-full col-span-2 rounded-r-2xl">
+	<h3 class="h3 mb-6">Testimonials</h3>
+	<div class="flex flex-col gap-8">
+		{#each quotes as quote}
+			<Quote {...quote} />
+		{/each}
+	</div>
 </div>
