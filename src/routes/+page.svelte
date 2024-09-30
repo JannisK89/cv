@@ -14,6 +14,13 @@
 	import Link from '$lib/components/Link.svelte';
 </script>
 
+<svelte:head>
+	<title>Jannis Karanikis</title>
+	<meta
+		name="description"
+		content="CV/Resume Page For Jannis Karanikis Software Engineer, Frontend Developer, Test Specialist and Cyber Security Enthusiast."
+	/>
+</svelte:head>;
 <div
 	class="bg-surface-700 bg-opacity-50 p-5 xl:h-full col-span-2 xl:rounded-l-2xl flex flex-col xl:gap-6 items-center pb-16"
 >
