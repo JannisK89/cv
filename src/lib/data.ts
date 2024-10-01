@@ -70,6 +70,21 @@ export const quotes: { text: string; author: string; title: string; link?: strin
     author: 'Niklas Windahl',
     title: 'Senior QA Test Automation Engineer @ AQC',
     link: 'https://www.linkedin.com/in/niklas-windahl-b6544ab4/'
+  },
+  {
+    text: `Some people are simply born to write code, and Jannis is one of
+    them. For over two years, he's been a powerhouse in our team as a test
+    automation engineer. But his influence extends beyond just doing his job
+    well. Jannis has been a catalyst for change, mentoring and guiding other
+      teams as they adopted the modern Playwright framework, improving their
+    testing quality and overall experience. <br> More than that, Jannis is the
+    person who “stole” my free time in the best possible way. His passion for
+      coding and deep understanding of IT systems inspired me to dive headfirst
+    into the world of programming. I like to call him the "King of
+    Programming," and trust me, that's not an exaggeration.`,
+    author: 'Ning Yuan',
+    title: 'Tech lead @ Swedish Public Employment Service',
+    link: 'https://www.linkedin.com/in/ning-yuan-ba615896/'
   }
 ];
 

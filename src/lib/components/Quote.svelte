@@ -24,6 +24,6 @@
 	<Title>{title}</Title>
 	<span class="flex my-4">
 		<QuoteIcon class="flex-shrink-0" />
-		<q class="italic text-wrap"> {text} </q>
+		<q class="italic text-wrap"> {@html text} </q>
 	</span>
 </div>
