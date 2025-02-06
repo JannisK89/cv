@@ -50,12 +50,12 @@
 			<h3 class="h3">About Me</h3>
 		</div>
 		<p class="font-sans font-light antialiased text-base">
-			I’m a software engineer with a strong focus on TypeScript and additional experience in Go and
-			C#. My expertise spans test automation, frontend development, cybersecurity, and DevOps. I
-			lead test automation initiatives, mentor junior engineers, and work to enhance code quality,
-			security, and performance. With a background in both professional and open-source projects,
-			I’m dedicated to building secure, high-performance systems while staying current with the
-			latest industry trends.
+			I'm a Software Engineer who blends development and testing expertise to create secure,
+			high-performance applications. I specialize in TypeScript (React/NextJS, Svelte/SvelteKit) and
+			Go, but I'm a quick learner and adaptable to various languages and frameworks. My passion for
+			Web and API security is central to my development approach and I also bring experience in
+			DevOps and cloud environments, contributing to the full software lifecycle. I'm also a speaker
+			and writer on topics related to software creation, testing, and security.
 		</p>
 	</Card>
 	<Card>

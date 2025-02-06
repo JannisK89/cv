@@ -7,9 +7,9 @@ export const jobList = [
     description: [
       'Test Automation Lead.',
       'Mentored juniors and conducted code reviews.',
-      'Worked closely with other developers to improve quality of application code.',
-      `Implemented security measures to protect company's data.`,
-      'Focused on enchancing frontend performance and accesibility.'
+      'Worked closely with other developers to improve quality and performance of backend and frontend code.',
+      'Found and fixed security vulnerabilities in APIs and Frontends.',
+      'Go, Typescript, React, NextJS '
     ]
   },
   {
@@ -20,7 +20,8 @@ export const jobList = [
     description: [
       'Test Lead on multiple projects.',
       'Led development and planning of test automation.',
-      'Assisted in development of backend and frontend code.'
+      'Assisted in development of backend and frontend code.',
+      'C#, Typescript'
     ]
   }
 ];
@@ -28,11 +29,11 @@ export const jobList = [
 export const skills = [
   'Javascript',
   'TypeScript',
+  'Go',
   'React',
   'NextJs',
   'Svelte',
   'Sveltekit',
-  'Go',
   'C#',
   'HTML',
   'CSS',
@@ -61,7 +62,8 @@ export const skills = [
   'SAFe',
   'Jira',
   'Confluence',
-  'Azure DevOps'
+  'Azure',
+  'And much much more'
 ];
 
 export const quotes: { text: string; author: string; title: string; link?: string }[] = [
