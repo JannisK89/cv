@@ -1,15 +1,14 @@
 export const jobList = [
   {
-    title: 'Software Engineer | Software Engineer In Test',
+    title: 'Security Tester | Software Engineer | Test Specialist',
     company: 'Avega',
     from: 'Oct 2021',
     to: 'Present',
     description: [
-      'Test Automation Lead.',
-      'Mentored juniors and conducted code reviews.',
-      'Worked closely with other developers to improve quality and performance of backend and frontend code.',
-      'Found and fixed security vulnerabilities in APIs and Frontends.',
-      'Go, Typescript, React, NextJS '
+      'Identified and remediated numerous high-impact security vulnerabilities in production APIs and web applications, significantly strengthening the company\'s security posture.',
+      'Championed secure coding practices by mentoring junior engineers and leading security-focused code reviews to proactively prevent flaws before deployment.',
+      'Served as Test Automation Lead, architecting a scalable automation framework from the ground up that increased test coverage and accelerated release cycles.',
+      'Collaborated with engineering teams to enhance application performance and quality, ensuring that security controls did not impede user experience.'
     ]
   },
   {
@@ -18,11 +17,12 @@ export const jobList = [
     from: 'Jan 2020',
     to: 'Oct 2021',
     description: [
-      'Test Lead on multiple projects.',
-      'Led development and planning of test automation.',
-      'Assisted in development of backend and frontend code.',
-      'C#, Typescript'
+      'Conducted security and penetration testing on key applications, discovering critical vulnerabilities and collaborating with developers to implement effective remediation strategies.',
+      'As Test Lead on multiple projects, I integrated security testing into the core test plans and was responsible for the final quality and security sign-off.',
+      'Architected and led the implementation of a test automation framework that reduced manual regression testing efforts by over 80%.',
+      'Actively contributed to full-stack application development, assisting with feature creation and bug fixes in both backend and frontend codebases.',
     ]
+
   }
 ];
 
@@ -57,6 +57,7 @@ export const skills = [
   'MS SQL',
   'API Security',
   'OWASP',
+  'Burp Suite',
   'Neovim',
   'Scrum',
   'SAFe',

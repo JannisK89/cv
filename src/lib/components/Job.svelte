@@ -6,6 +6,7 @@
 	export let from: string;
 	export let to: string;
 	export let description: string[];
+  export let gap: boolean = true
 </script>
 
 <div>
@@ -13,7 +14,7 @@
 	<Title>{company} | {from} - {to}</Title>
 	<ul class="font-sans font-light text-sm antialiased list-inside">
 		{#each description as item}
-			<li class="list-disc">
+			<li class="list-disc {gap ? 'mb-4' : ''}">
 				{item}
 			</li>
 		{/each}

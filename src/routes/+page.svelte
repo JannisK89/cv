@@ -25,9 +25,9 @@
 	<div class="flex flex-col gap-2">
 		<h3 class="h3">Jannis Karanikis</h3>
 		<div class="flex flex-col">
+			<Title>Ethical Hacker | Security Tester</Title>
 			<Title>Software Engineer</Title>
 			<Title>Test Specialist</Title>
-			<Title>Cyber Security Enthusiast</Title>
 		</div>
 		<Section>
 			<h3 class="h3">Contact</h3>
@@ -50,12 +50,17 @@
 			<h3 class="h3">About Me</h3>
 		</div>
 		<p class="font-sans font-light antialiased text-base">
-			I'm a Software Engineer who blends development and testing expertise to create secure,
-			high-performance applications. I specialize in TypeScript (React/NextJS, Svelte/SvelteKit) and
-			Go, but I'm a quick learner and adaptable to various languages and frameworks. My passion for
-			Web and API security is central to my development approach and I also bring experience in
-			DevOps and cloud environments, contributing to the full software lifecycle. I'm also a speaker
-			and writer on topics related to software creation, testing, and security.
+    I am an IT security professional who bridges the critical gap between
+    offensive security and software development. My primary focus is on
+    proactively discovering and neutralizing threats in web and API ecosystems.
+    Leveraging hands-on development experience with TypeScript (React/NextJS,
+    Svelte/SvelteKit) and Go, I not only identify weaknesses through rigorous
+    testing but also collaborate directly with engineering teams to implement
+    effective, long-term security solutions. With a strong foundation in DevOps
+    and cloud infrastructure, I champion a security-first mindset across the
+    entire SDLC. I actively contribute to the security community as a speaker
+    and writer, sharing insights on both secure development and vulnerability
+    assessment.
 		</p>
 	</Card>
 	<Card>
@@ -77,6 +82,7 @@
 			company="Nackademin"
 			from="2018"
 			to="2020"
+      gap={false}
 			description={[
 				'2 year vocational education.',
 				'Test and test methodologies.',
